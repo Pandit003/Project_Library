@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>activity_book_issue.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_book_issue.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;androidx.constraintlayout.widget.ConstraintLayout </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">tools:context</span><span class="s2">=&quot;.Book_Issue&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;EditText</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/pname&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;344dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;50dp&quot;</span>
+        <span class="s1">android:ems</span><span class="s2">=&quot;10&quot;</span>
+        <span class="s1">android:hint</span><span class="s2">=&quot;Person name&quot;</span>
+        <span class="s1">android:inputType</span><span class="s2">=&quot;text&quot;</span>
+        <span class="s1">android:textColorHint</span><span class="s2">=&quot;#BABABA&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@+id/contact&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.5&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/bookname&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.5&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;EditText</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/contact&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;344dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;50dp&quot;</span>
+        <span class="s1">android:ems</span><span class="s2">=&quot;10&quot;</span>
+        <span class="s1">android:hint</span><span class="s2">=&quot;Contact&quot;</span>
+        <span class="s1">android:inputType</span><span class="s2">=&quot;numberSigned&quot;</span>
+        <span class="s1">android:textColorHint</span><span class="s2">=&quot;#BABABA&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@+id/bokid&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;@+id/pname&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;@+id/pname&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/pname&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.5&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;EditText</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/bokid&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;344dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;50dp&quot;</span>
+        <span class="s1">android:ems</span><span class="s2">=&quot;10&quot;</span>
+        <span class="s1">android:hint</span><span class="s2">=&quot;Book ID&quot;</span>
+        <span class="s1">android:inputType</span><span class="s2">=&quot;text&quot;</span>
+        <span class="s1">android:textColorHint</span><span class="s2">=&quot;#FFBABABA&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@+id/issuedate&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;@+id/contact&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;@+id/contact&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/contact&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.5&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/issuedate&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;192dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;50dp&quot;</span>
+        <span class="s1">android:ems</span><span class="s2">=&quot;10&quot;</span>
+        <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+        <span class="s1">android:hint</span><span class="s2">=&quot;Issue Date&quot;</span>
+        <span class="s1">android:inputType</span><span class="s2">=&quot;date&quot;</span>
+        <span class="s1">android:textColorHint</span><span class="s2">=&quot;#BABABA&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;18sp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@+id/returndate&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;@+id/bokid&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.0&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;@+id/bokid&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/bokid&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.5&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/returndate&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;192dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;50dp&quot;</span>
+        <span class="s1">android:ems</span><span class="s2">=&quot;10&quot;</span>
+        <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+        <span class="s1">android:hint</span><span class="s2">=&quot;Return Date&quot;</span>
+        <span class="s1">android:inputType</span><span class="s2">=&quot;date&quot;</span>
+        <span class="s1">android:textColorHint</span><span class="s2">=&quot;#FFBABABA&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;18sp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@+id/iss&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;@+id/issuedate&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;@+id/issuedate&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/issuedate&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.5&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/bookname&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;127dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;22dp&quot;</span>
+        <span class="s1">android:textAlignment</span><span class="s2">=&quot;center&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@+id/pname&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.5&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/image&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.5&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;Button</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/rdate&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;Select Date&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;@+id/returndate&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;@+id/textView8&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;@+id/returndate&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;Button</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/iss&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;320dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;62dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;16dp&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;Issue&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;20sp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;@+id/bokid&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;@+id/bokid&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;ImageView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/image&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;157dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;190dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;32dp&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:srcCompat</span><span class="s2">=&quot;@drawable/bookadd&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/textView8&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;110dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;50dp&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;36dp&quot;</span>
+        <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;Issue Date&quot;</span>
+        <span class="s1">android:textAlignment</span><span class="s2">=&quot;center&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;18sp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;@+id/issuedate&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;@+id/bokid&quot;</span>
+        <span class="s1">app:layout_constraintStart_toEndOf</span><span class="s2">=&quot;@+id/issuedate&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;@+id/issuedate&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.0&quot; </span><span class="s0">/&gt;</span>
+
+<span class="s0">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span></pre>
+</body>
+</html>
